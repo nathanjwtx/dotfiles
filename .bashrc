@@ -123,7 +123,3 @@ if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then
   POWERLINE_BASH_SELECT=1
   source /usr/share/powerline/bindings/bash/powerline.sh
 fi
-
-# My aliases
-alias dcb="docker-compose build"
-alias dcu="docker-compose up"
