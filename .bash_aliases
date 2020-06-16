@@ -8,3 +8,8 @@ alias sal="sudo apt list -u"
 alias sap="sudo apt upgrade"
 alias sac="sudo apt autoclean"
 alias sar="sudo apt autoremove"
+
+# Git
+alias gc="git checkout"
+alias gp="git pull"
+alias gs="git status"
