@@ -1,6 +1,8 @@
 # Docker
 alias dcu="docker-compose up"
 alias dcb="docker-compose build"
+alias dcl="docker container ls"
+alias dp="docker pull"
 
 # General
 alias sau="sudo apt update"
