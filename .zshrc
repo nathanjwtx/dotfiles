@@ -9,7 +9,12 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/nathan/.oh-my-zsh"
+if [ -d "/home/nathan" ]
+then
+  export ZSH="/home/nathan/.oh-my-zsh"
+else
+  export ZSH="/root/.oh-my-zsh"
+fi
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -105,7 +110,12 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-source ~/dotfiles/.bash_aliases
+if [ -d /dotfiles ]
+then
+  source ~/dotfiles/.bash_aliases
+else
+  source ~/.bash_aliases
+fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

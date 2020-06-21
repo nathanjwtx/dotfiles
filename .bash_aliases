@@ -17,3 +17,6 @@ alias gc="git checkout"
 alias gp="git pull"
 alias gs="git status"
 alias gu="git push"
+
+# WSL terminal
+alias winh="cd /mnt/c/Users/nathan"
