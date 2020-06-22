@@ -19,4 +19,4 @@ alias gs="git status"
 alias gu="git push"
 
 # WSL terminal
-alias winh="cd /mnt/c/Users/nathan"
+alias winh="cd /mnt/c/Users/nathan/"
