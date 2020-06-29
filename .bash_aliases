@@ -2,7 +2,11 @@
 alias dcu="docker-compose up"
 alias dcb="docker-compose build"
 alias dcl="docker container ls"
+alias dis="docker images"
 alias dp="docker pull"
+alias dip="docker image prune"
+alias dsp="docker system prune"
+alias dc="docker container"
 
 # General
 alias sau="sudo apt update"
