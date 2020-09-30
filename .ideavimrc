@@ -1,3 +1,6 @@
+" ignore case for search
+:set ignorecase
+
 " auto switching of line number styles
 :set number relativenumber
  
