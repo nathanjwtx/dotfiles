@@ -1,6 +1,6 @@
 # Docker
-alias dcu="docker-compose up"
-alias dcb="docker-compose build"
+alias dcu="docker compose up"
+alias dcb="docker compose build"
 alias dcl="docker container ls"
 alias dis="docker images"
 alias dp="docker pull"
