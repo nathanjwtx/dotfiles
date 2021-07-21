@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 if [ -d "/home/nathan" ]
@@ -113,11 +113,19 @@ source $ZSH/oh-my-zsh.sh
 if [ -d /dotfiles ]
 then
   source ~/dotfiles/.bash_aliases
+elif [ .bash_aliases ]
+then
+  source .bash_aliases
 else
-  source ~/.bash_aliases
+  source  ~/.bash_aliases
 fi
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 plugins+=(zsh-completions)
 autoload -U compinit && compinit
+
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

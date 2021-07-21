@@ -8,6 +8,8 @@ alias dip="docker image prune"
 alias dsp="docker system prune"
 alias dc="docker container"
 alias di="docker image"
+alias db="docker build"
+alias dr="docker run"
 
 # General
 alias sau="sudo apt update"
@@ -24,6 +26,7 @@ alias gst="git status"
 alias gph="git push"
 alias gco="git commit"
 alias gsh="git stash"
+alias gcl="git clone"
 
 # WSL terminal
 alias winh="cd /mnt/c/Users/nathan/"
